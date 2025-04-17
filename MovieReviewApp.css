@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .app {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: calc(100vh - 60px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+  }
+  
+  .movie-card {
+    background-color: #222;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    flex: 0 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .reviews {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .reviews input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .reviews button {
+    width: 100%;
+    padding: 5px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
